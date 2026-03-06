@@ -107,7 +107,7 @@ export default function Navbar() {
               href="/conference#2026"
               className="px-5 py-2.5 rounded-xl bg-primary text-dark font-heading font-bold text-sm hover:bg-primary-light transition-all duration-200 glow hover:glow-strong"
             >
-              Join 2026 →
+              Join the Community →
             </Link>
           </div>
 
@@ -156,11 +156,11 @@ export default function Navbar() {
             ))}
             <div className="pt-4">
               <Link
-                href="/conference#2026"
+                href="/"
                 onClick={() => setIsOpen(false)}
                 className="block text-center px-5 py-3 rounded-xl bg-primary text-dark font-heading font-bold text-sm"
               >
-                Join 2026 Conference →
+                Join the Community →
               </Link>
             </div>
           </div>

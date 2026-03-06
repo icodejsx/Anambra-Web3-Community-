@@ -1,14 +1,16 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { Usersß } from "lucide-react";
+
 
 const stats = [
-  { value: 6000, suffix: "+", label: "Community Members", sub: "Across campuses & platforms", icon: "👥" },
-  { value: 5000, suffix: "+", label: "2025 Attendees", sub: "2,500 physical · 2,500 online", icon: "🎤" },
-  { value: 400, suffix: "+", label: "Developers Trained", sub: "Cairo, Solidity & Web3 tools", icon: "💻" },
-  { value: 4000, suffix: "+", label: "Email Subscribers", sub: "Active newsletter community", icon: "📧" },
-  { value: 20, suffix: "+", label: "Ecosystem Partners", sub: "Leading Web3 organizations", icon: "🤝" },
-  { value: 3, suffix: "", label: "Conferences Held", sub: "2024, 2025, 2026 upcoming", icon: "🚀" },
+  { value: 6000, suffix: "+", label: "Community Members", sub: "Across campuses & platforms", icon: ""},
+  { value: 5000, suffix: "+", label: "2025 Attendees", sub: "2,500 physical · 2,500 online", icon: "" },
+  { value: 400, suffix: "+", label: "Developers Trained", sub: "Cairo, Solidity & Web3 tools", icon: "" },
+  { value: 4000, suffix: "+", label: "Email Subscribers", sub: "Active newsletter community", icon: "" },
+  { value: 20, suffix: "+", label: "Ecosystem Partners", sub: "Leading Web3 organizations", icon: "" },
+  { value: 3, suffix: "", label: "Conferences Held", sub: "2024, 2025, 2026 upcoming", icon:  "" },
 ];
 
 function Counter({ target, suffix }: { target: number; suffix: string }) {

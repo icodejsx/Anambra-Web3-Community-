@@ -132,7 +132,7 @@ export default function HeroSection() {
           <div className="stagger-child flex flex-wrap items-center gap-8 pt-8 border-t border-white/5">
             {[
               { v: "6,000+", l: "Community Members" },
-              { v: "5,000+", l: "2025 Attendees" },
+              { v: "10,000+", l: "2025 Attendees" },
               { v: "400+", l: "Devs Trained" },
             ].map((s) => (
               <div key={s.l}>

@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu, X, ChevronDown } from "lucide-react";
+import Image from "next/image";
 
 const navLinks = [
   { label: "Home", href: "/" },
@@ -46,7 +47,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 group">
-            <div className="w-10 h-10 rounded-xl bg-primary flex items-center justify-center glow group-hover:glow-strong transition-all duration-300">
+            {/* <div className="w-10 h-10 rounded-xl bg-primary flex items-center justify-center glow group-hover:glow-strong transition-all duration-300">
               <span className="text-dark font-heading font-bold text-lg">A</span>
             </div>
             <div>
@@ -56,7 +57,9 @@ export default function Navbar() {
               <div className="font-heading font-bold text-primary text-sm leading-tight tracking-widest">
                 WEB3
               </div>
-            </div>
+            </div> */}
+
+            <Image src="/logomain.png" alt="Anambra Web3 Logo" width={140} height={400} className="rounded-xl" />
           </Link>
 
           {/* Desktop Nav */}

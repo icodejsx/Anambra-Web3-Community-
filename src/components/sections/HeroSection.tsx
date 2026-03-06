@@ -66,7 +66,7 @@ export default function HeroSection() {
           <div className="stagger-child mb-8">
             <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass border-primary/20 text-xs font-mono font-bold uppercase tracking-widest text-primary">
               <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
-              🌍 Southeast Nigeria&apos;s #1 Web3 Community
+              🇳🇬 Southeast Nigeria&apos;s #1 Web3 Community
             </span>
           </div>
 

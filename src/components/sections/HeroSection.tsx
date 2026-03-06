@@ -60,7 +60,7 @@ export default function HeroSection() {
       </div>
 
       {/* Main content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 lg:py-24 py-10">
         <div ref={titleRef} className="max-w-3xl">
           {/* Badge */}
           <div className="stagger-child mb-8">

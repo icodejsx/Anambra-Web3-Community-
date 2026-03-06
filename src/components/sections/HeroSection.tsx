@@ -55,12 +55,12 @@ export default function HeroSection() {
       <div className="orbit" style={{ width: 200, height: 200, top: "50%", right: "8%", animationDuration: "15s" }} />
 
       {/* Floating blockchain art */}
-      <div className="absolute right-0 top-0 w-1/2 h-full hidden lg:block pointer-events-none overflow-hidden">
+      <div className="absolute right-0 top-0 w-1/ h-full hidden lg:block pointer-events-none overflow-hidden">
         <BlockchainArt />
       </div>
 
       {/* Main content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 lg:py-24 py-10">
+      <div className="relative z-10 max-w-7xl lg:mx-[200px] px-4 sm:px-6 lg:px-8 lg:py-16 py-10">
         <div ref={titleRef} className="max-w-3xl">
           {/* Badge */}
           <div className="stagger-child mb-8">
@@ -71,24 +71,31 @@ export default function HeroSection() {
           </div>
 
           {/* Main heading */}
-          <div className="stagger-child mb-2">
-            <h1 className="font-['Syne'] font-bold text-[clamp(3rem,8vw,6rem)] leading-[1.0] text-white">
+          <div className="stagger-child mb-1">
+            <h1 className="font-['Syne'] font- font-bold text-[clamp(3rem,8vw,6rem)] leading-[1.0] text-white">
               Building
             </h1>
           </div>
-          <div className="stagger-child mb-2">
+          <div className="stagger-child mb-1">
             <h1 className="font-['Syne'] font-bold text-[clamp(3rem,8vw,6rem)] leading-[1.0] text-gradient">
-              The Future
+             
+              Web3's
             </h1>
           </div>
-          <div className="stagger-child mb-2">
+          <div className="stagger-child mb-1">
             <h1 className="font-['Syne'] font-bold text-[clamp(3rem,8vw,6rem)] leading-[1.0] text-white">
-              of Web3 in
+            Future in
             </h1>
           </div>
-          <div className="stagger-child mb-8">
+          <div className="stagger-child mb-1">
             <h1 className="font-['Syne'] font-bold text-[clamp(3rem,8vw,6rem)] leading-[1.0] text-primary">
-              Nigeria.
+              Anambra &
+            </h1>
+          </div>
+
+          <div className="stagger-child mb-1">
+            <h1 className="font-['Syne'] font-bold text-[clamp(3rem,8vw,6rem)] leading-[1.0] text-primary">
+              Beyond
             </h1>
           </div>
 
@@ -105,7 +112,7 @@ export default function HeroSection() {
           {/* Sub */}
           <div className="stagger-child mb-10">
             <p className="text-white/55 font-['DM_Sans'] text-lg leading-relaxed max-w-xl">
-              From Anambra to the world — educating developers, hosting world-class conferences,
+              From Anambra to the world educating developers,creators, Designers, founders, hosting world-class conferences,
               and connecting Southeast Nigeria to the global Web3 ecosystem.
             </p>
           </div>

@@ -41,7 +41,7 @@ export default function StatsSection() {
     <section className="relative py-24 border-y border-primary/10 overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_50%_50%,rgba(158,148,255,0.06)_0%,transparent_70%)]" />
 
-      {/* Decorative linesd */}
+      {/* Decorative lines */}
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent" />
       <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent" />
 

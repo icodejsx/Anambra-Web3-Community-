@@ -5,14 +5,14 @@ const conferences = [
   {
     year: "2024",
     edition: "1.0",
-    theme: "The Beginning",
+    theme: "Exploring the Decentralized web",
     date: "2024",
     location: "Awka, Anambra State",
     attendees: "1,700+",
     speakers: "25+",
     partners: "20+",
     status: "past" as const,
-    image: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=700&q=80",
+    image: "/IMG-20241103-WA0117.jpg",
     description: "The first-ever Anambra Web3 Conference that put Southeast Nigeria on the blockchain map. 1,700+ attendees, 25 speakers, 15 hackathon projects, 50+ jobs created.",
   },
   {
@@ -25,7 +25,7 @@ const conferences = [
     speakers: "30+",
     partners: "25+",
     status: "past" as const,
-    image: "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=700&q=80",
+    image: "/Anambraweb3conf-386.JPG",
     description: "5,000 attendees — 2,500 physical at Stanel Dome and 2,500 live on Twitter. Southeast Nigeria's largest Web3 event ever. Hackathon, masterclasses, investors, and global speakers.",
   },
   {
@@ -38,7 +38,7 @@ const conferences = [
     speakers: "50+",
     partners: "30+",
     status: "upcoming" as const,
-    image: "https://images.unsplash.com/photo-1559223607-180cd2c3f28e?w=700&q=80",
+    image: "/Anambraweb3conf-354.JPG",
     description: "The biggest edition yet is being planned. 10,000+ expected attendees, international speakers, a massive hackathon, and partnerships that will reshape African Web3.",
   },
 ];
@@ -52,7 +52,7 @@ export default function ConferenceHighlight() {
         <div className="scale-reveal flex flex-col md:flex-row md:items-end justify-between gap-4 mb-16">
           <div>
             <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-['Space_Mono'] font-bold uppercase tracking-widest bg-primary/15 text-primary border border-primary/25 mb-4">
-              🎤 Flagship Event
+              Flagship Event
             </span>
             <h2 className="font-['Syne'] font-bold text-4xl md:text-5xl text-white leading-tight">
               The Anambra Web3{" "}

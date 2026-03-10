@@ -24,7 +24,7 @@ const programs = [
   {
     id: "hackathon", icon: Zap, tag: "Builder", tagColor: "text-amber-400 bg-amber-400/10 border-amber-400/20",
     title: "Web3 Hackathon",
-    image: "/6C45A565-D38C-451A-ACFF-C1340B2411E2_1_102_o.jpeg",
+    image: "/534A7BB3-89CF-460F-90F6-8910CE543DD6.jpeg",
     description: "48-72 hour intense buildathons where developers form teams and ship real Web3 products. Projects get mentorship, investor exposure, and funding opportunities.",
     duration: "48–72 Hours", format: "In-person + Online", participants: "15+ projects built", status: "Held at Conferences",
     highlights: ["Team formation & ideation","Mentorship from senior engineers","Access to APIs and tools","Live building sessions","Demos to investors","Prizes and funding","Web3 ecosystem networking","Post-hackathon incubation"],
@@ -32,7 +32,8 @@ const programs = [
   {
     id: "meetups", icon: Mic, tag: "Community", tagColor: "text-rose-400 bg-rose-400/10 border-rose-400/20",
     title: "Web3 Meetups & Twitter Spaces",
-    image: "/534A7BB3-89CF-460F-90F6-8910CE543DD6.jpeg",
+ 
+    image: "/6C45A565-D38C-451A-ACFF-C1340B2411E2_1_102_o.jpeg",
     description: "Regular offline and online sessions connecting the community to experts, mentors, and the latest in blockchain.",
     duration: "Ongoing", format: "Offline + Twitter Spaces", participants: "Thousands reached", status: "Active",
     highlights: ["Monthly meetups in Awka","Weekly Twitter Spaces","Guest speakers from top protocols","Developer study groups","Project showcase sessions","Career guidance","Networking events","Women in Web3 sessions"],

@@ -54,13 +54,13 @@ export default function AboutPage() {
             {/* Collage */}
             <div className="grid grid-cols-2 gap-3 stagger-child">
               <div className="img-hover col-span-2 h-48 rounded-2xl overflow-hidden glass">
-                <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80" alt="Conference" className="w-full h-full object-cover" />
+                <img src="/Anambraweb3conf-400.JPG" alt="Conference" className="w-full h-full object-cover" />
               </div>
               <div className="img-hover h-32 rounded-2xl overflow-hidden glass">
-                <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=400&q=80" alt="Community" className="w-full h-full object-cover" />
+                <img src="/Anambraweb3conf-549.JPG" alt="Community" className="w-full h-full object-cover" />
               </div>
               <div className="img-hover h-32 rounded-2xl overflow-hidden glass">
-                <img src="https://images.unsplash.com/photo-1559223607-180cd2c3f28e?w=400&q=80" alt="Hackathon" className="w-full h-full object-cover" />
+                <img src="/Anambraweb3conf-362.JPG" alt="Hackathon" className="w-full h-full object-cover" />
               </div>
             </div>
           </div>

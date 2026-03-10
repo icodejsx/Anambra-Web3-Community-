@@ -27,8 +27,8 @@ export default function GlobalEffects() {
     const lerp = (a: number, b: number, t: number) => a + (b - a) * t;
 
     const animateCursor = () => {
-      ringPos.current.x = lerp(ringPos.current.x, mousePos.current.x, 0.25);
-      ringPos.current.y = lerp(ringPos.current.y, mousePos.current.y, 0.25);
+      ringPos.current.x = lerp(ringPos.current.x, mousePos.current.x, 0.9);
+      ringPos.current.y = lerp(ringPos.current.y, mousePos.current.y, 0.9);
       ring.style.left = ringPos.current.x + "px";
       ring.style.top = ringPos.current.y + "px";
       rafRef.current = requestAnimationFrame(animateCursor);

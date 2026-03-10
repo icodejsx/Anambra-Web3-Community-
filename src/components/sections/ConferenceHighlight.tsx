@@ -7,7 +7,7 @@ const conferences = [
     edition: "1.0",
     theme: "Exploring the Decentralized web",
     date: "2024",
-    location: "Awka, Anambra State",
+    location: "HollyWood Event Center Awka, Anambra State",
     attendees: "1,700+",
     speakers: "25+",
     partners: "20+",

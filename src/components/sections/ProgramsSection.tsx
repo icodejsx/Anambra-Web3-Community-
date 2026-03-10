@@ -6,10 +6,10 @@ const programs = [
     icon: BookOpen,
     tag: "Beginner",
     tagColor: "text-emerald-400 bg-emerald-400/10 border-emerald-400/20",
-    title: "Crypto for Newbies",
+    title: "21 Crypto for Newbies",
     description: "A 21-day structured program that takes complete beginners from zero to their first crypto wallet, DeFi interactions, and Web3 career path.",
     stats: "500+ trained",
-    image: "https://images.unsplash.com/photo-1551818255-e6e10975bc17?w=500&q=80",
+    image: "/AB635644-977D-477B-A2EA-DAC89BB286A2_1_105_c.jpeg",
     href: "/events#crypto-newbies",
   },
   {
@@ -19,7 +19,7 @@ const programs = [
     title: "Cairo Smart Contract Bootcamp",
     description: "7-week intensive bootcamp on Starknet smart contract development using Cairo. Layer 2, ZK tech, and real dApp deployment.",
     stats: "100+ devs graduated",
-    image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=500&q=80",
+    image: "/F9A4DF7F-1F48-49D8-B14E-0E53408252D5.jpeg",
     href: "/events#cairo-bootcamp",
   },
   {
@@ -29,7 +29,7 @@ const programs = [
     title: "Web3 Hackathon",
     description: "48-hour buildathons where developers ship real Web3 products, get mentored by senior engineers, and compete for funding prizes.",
     stats: "15 projects shipped",
-    image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=500&q=80",
+    image: "/534A7BB3-89CF-460F-90F6-8910CE543DD6.jpeg",
     href: "/events#hackathon",
   },
   {
@@ -39,7 +39,7 @@ const programs = [
     title: "Web3 Meetups & Spaces",
     description: "Regular offline meetups in Awka and weekly Twitter Spaces connecting builders to experts, mentors and global ecosystem leaders.",
     stats: "Thousands reached",
-    image: "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=500&q=80",
+    image: "/6C45A565-D38C-451A-ACFF-C1340B2411E2_1_102_o.jpeg",
     href: "/events#meetups",
   },
 ];

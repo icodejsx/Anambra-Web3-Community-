@@ -2,44 +2,99 @@
 
 import { useRef } from "react";
 
-// Using Unsplash photos as placeholders — replace with actual community photos
 const communityPhotos = [
   {
-    url: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80",
+    url: "/Anambraweb3conf-599.JPG",
     caption: "Anambra Web3 Conference 2025 — Stanel Dome, Awka",
     span: "col-span-2 row-span-2",
   },
   {
-    url: "https://images.unsplash.com/photo-1591115765373-5207764f72e7?w=600&q=80",
-    caption: "Developer Bootcamp Session",
+    url: "/Anambraweb3conf-231.JPG",
+    caption: "Anambra Web3 Conference 2025 — Stanel Dome, Awka",
     span: "",
   },
   {
-    url: "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=600&q=80",
-    caption: "Conference Speaker Stage",
+    url: "/Anambraweb3conf-290.JPG",
+    caption: "Anambra Web3 Conference 2025 — Stanel Dome, Awka",
     span: "",
   },
   {
-    url: "https://images.unsplash.com/photo-1559223607-180cd2c3f28e?w=600&q=80",
-    caption: "Crypto for Newbies Training",
+    url: "/Anambraweb3conf-326.JPG",
+    caption: "Anambra Web3 Conference 2025 — Stanel Dome, Awka",
     span: "",
   },
   {
-    url: "https://images.unsplash.com/photo-1551818255-e6e10975bc17?w=600&q=80",
-    caption: "Hackathon Teams Building",
+    url: "/Anambraweb3conf-494.JPG",
+    caption: "Anambra Web3 Conference 2025 — Stanel Dome, Awka",
     span: "",
   },
   {
-    url: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=600&q=80",
+    url: "/Anambraweb3conf-488.JPG",
     caption: "Community Networking Night",
     span: "",
   },
   {
-    url: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800&q=80",
-    caption: "Cairo Smart Contract Bootcamp Graduation",
+    url: "/Anambraweb3conf-216.JPG",
+    caption: "Anambra Web3 Conference 2025 — Stanel Dome, Awka",
     span: "col-span-2",
   },
+  {
+    url: "/Anambraweb3conf-634.JPG",
+    caption: "Anambra Web3 Conference 2025 — Stanel Dome, Awka",
+    span: "",
+  },
 ];
+
+
+
+
+const communityPhotoSlide = [
+  {
+    url: "/Anambraweb3conf-689 (1).JPG",
+    caption: "Anambra Web3 Conference 2025 — Stanel Dome, Awka",
+    span: "col-span-2 row-span-2",
+  },
+  {
+    url: "/Anambraweb3conf-710.JPG",
+    caption: "Anambra Web3 Conference 2025 — Stanel Dome, Awka",
+    span: "",
+  },
+  {
+    url: "/Anambraweb3conf.JPG",
+    caption: "Anambra Web3 Conference 2025 — Stanel Dome, Awka",
+    span: "",
+  },
+  {
+    url: "/Anambraweb3conf-549.JPG",
+    caption: "Anambra Web3 Conference 2025 — Stanel Dome, Awka",
+    span: "",
+  },
+  {
+    url: "/Anambraweb3conf-493.JPG",
+    caption: "Anambra Web3 Conference 2025 — Stanel Dome, Awka",
+    span: "",
+  },
+  {
+    url: "/Anambraweb3conf-424.JPG",
+    caption: "Community Networking Night",
+    span: "",
+  },
+  {
+    url: "/Anambraweb3conf-413.JPG",
+    caption: "Anambra Web3 Conference 2025 — Stanel Dome, Awka",
+    span: "col-span-2",
+  },
+  {
+    url: "/Anambraweb3conf-400.JPG",
+    caption: "Anambra Web3 Conference 2025 — Stanel Dome, Awka",
+    span: "",
+  },
+];
+
+
+
+// Duplicate photos to fill the marquee strip seamlessly
+const marqueePhotos = [...communityPhotoSlide];
 
 export default function GallerySection() {
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -50,7 +105,7 @@ export default function GallerySection() {
         <div className="scale-reveal flex flex-col md:flex-row md:items-end justify-between gap-4">
           <div>
             <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-['Space_Mono'] font-bold uppercase tracking-widest bg-primary/15 text-primary border border-primary/25 mb-4">
-              📸 Community Gallery
+              Community Gallery
             </span>
             <h2 className="font-['Syne'] font-bold text-4xl md:text-5xl text-white leading-tight">
               See What We&apos;ve{" "}
@@ -78,26 +133,31 @@ export default function GallerySection() {
                 className="w-full h-full object-cover"
                 loading="lazy"
               />
-              {/* Overlay */}
               <div className="absolute inset-0 bg-gradient-to-t from-dark/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500" />
               <div className="absolute bottom-0 left-0 right-0 p-4 translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-500">
                 <p className="text-white font-['DM_Sans'] text-xs font-medium">{photo.caption}</p>
               </div>
-              {/* Shine */}
               <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
             </div>
           ))}
         </div>
       </div>
 
-      {/* Horizontal scroll strip */}
+      {/* Horizontal scroll marquee strip — using community photos */}
       <div className="mt-10 relative overflow-hidden">
-        <div ref={scrollRef} className="flex gap-4 animate-marquee" style={{ width: "max-content" }}>
-          {[...Array(16)].map((_, i) => (
-            <div key={i} className="w-56 h-36 rounded-xl overflow-hidden shrink-0 glass img-hover">
+        <div
+          ref={scrollRef}
+          className="flex gap-4 animate-marquee"
+          style={{ width: "max-content" }}
+        >
+          {marqueePhotos.map((photo, i) => (
+            <div
+              key={i}
+              className="w-56 h-36 rounded-xl overflow-hidden shrink-0 glass img-hover"
+            >
               <img
-                src={`https://images.unsplash.com/photo-${["1540575467063","1591115765373","1475721027785","1559223607180","1551818255","1504384308090","1517245386807","1529156069898"][i % 8]}?w=400&q=70`}
-                alt="Community event"
+                src={photo.url}
+                alt={photo.caption}
                 className="w-full h-full object-cover"
                 loading="lazy"
               />

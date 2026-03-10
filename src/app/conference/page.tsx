@@ -5,19 +5,20 @@ import Link from "next/link";
 export const metadata: Metadata = { title: "Conference | Anambra Web3 Community" };
 
 const conf2024Photos = [
-  "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=700&q=80",
-  "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=500&q=80",
-  "https://images.unsplash.com/photo-1591115765373-5207764f72e7?w=500&q=80",
-  "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=700&q=80",
+   "/AW3C-184 (1).jpg",
+   "/AW3C-258.jpg",
+   "/AW3C-213 (1).jpg",
+   "/AW3C-240 (1).jpg",
 ];
 
 const conf2025Photos = [
-  "https://images.unsplash.com/photo-1559223607-180cd2c3f28e?w=700&q=80",
-  "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=500&q=80",
-  "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=500&q=80",
-  "https://images.unsplash.com/photo-1551818255-e6e10975bc17?w=700&q=80",
-  "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80",
-  "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=400&q=80",
+  "/Anambraweb3conf-371.JPG",
+  "/Anambraweb3conf-380.JPG",
+  "/Anambraweb3conf-414.JPG",
+    "/Anambraweb3conf-441.JPG",
+    "/Anambraweb3conf-459.JPG",
+    "/Anambraweb3conf-554.JPG",
+
 ];
 
 const conf2025Highlights = [
@@ -53,7 +54,7 @@ export default function ConferencePage() {
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-['Space_Mono'] font-bold uppercase tracking-widest bg-primary/15 text-primary border border-primary/25 mb-6 stagger-child">
-            🎤 Flagship Event
+            Flagship Event
           </span>
           <h1 className="font-['Syne'] font-bold text-5xl md:text-8xl text-white leading-[1.0] mt-4 mb-6 stagger-child">
             The Anambra<br /><span className="text-gradient">Web3 Conference</span>

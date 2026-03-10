@@ -8,7 +8,7 @@ const programs = [
   {
     id: "crypto-newbies", icon: BookOpen, tag: "Beginner", tagColor: "text-emerald-400 bg-emerald-400/10 border-emerald-400/20",
     title: "21 Days Crypto for Newbies",
-    image: "https://images.unsplash.com/photo-1551818255-e6e10975bc17?w=700&q=80",
+    image: "/AB635644-977D-477B-A2EA-DAC89BB286A2_1_105_c.jpeg",
     description: "The most accessible Web3 education program in Southeast Nigeria. 21-day journey covering blockchain fundamentals to your first DeFi transaction.",
     duration: "21 Days", format: "Online (Twitter Spaces & WhatsApp)", participants: "500+ trained", status: "Recurring",
     highlights: ["What is money & blockchain","Bitcoin & Ethereum fundamentals","Wallets & security best practices","Crypto exchanges (CEX vs DEX)","DeFi, NFTs & digital ownership","Web3 career paths","Content creation in Web3","Crypto scam awareness","Trading basics","Real-life use cases"],
@@ -16,7 +16,7 @@ const programs = [
   {
     id: "cairo-bootcamp", icon: Code2, tag: "Developer", tagColor: "text-primary bg-primary/10 border-primary/20",
     title: "Cairo Smart Contract Bootcamp",
-    image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=700&q=80",
+    image: "/F9A4DF7F-1F48-49D8-B14E-0E53408252D5.jpeg",
     description: "Intensive 7-week program on Starknet smart contract development using Cairo. Built for developers ready to build real Layer 2 decentralized applications.",
     duration: "7 Weeks", format: "Online + Offline (Hybrid)", participants: "100+ developers", status: "Completed — Next cohort TBA",
     highlights: ["Introduction to smart contracts","Cairo programming language","Starknet architecture & L2","Zero-knowledge (ZK) technology","Building dApps","Smart contract security","Deploying on Starknet testnet","Project development","Mentorship from engineers","Job placement support"],
@@ -24,7 +24,7 @@ const programs = [
   {
     id: "hackathon", icon: Zap, tag: "Builder", tagColor: "text-amber-400 bg-amber-400/10 border-amber-400/20",
     title: "Web3 Hackathon",
-    image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=700&q=80",
+    image: "/6C45A565-D38C-451A-ACFF-C1340B2411E2_1_102_o.jpeg",
     description: "48-72 hour intense buildathons where developers form teams and ship real Web3 products. Projects get mentorship, investor exposure, and funding opportunities.",
     duration: "48–72 Hours", format: "In-person + Online", participants: "15+ projects built", status: "Held at Conferences",
     highlights: ["Team formation & ideation","Mentorship from senior engineers","Access to APIs and tools","Live building sessions","Demos to investors","Prizes and funding","Web3 ecosystem networking","Post-hackathon incubation"],
@@ -32,7 +32,7 @@ const programs = [
   {
     id: "meetups", icon: Mic, tag: "Community", tagColor: "text-rose-400 bg-rose-400/10 border-rose-400/20",
     title: "Web3 Meetups & Twitter Spaces",
-    image: "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=700&q=80",
+    image: "/534A7BB3-89CF-460F-90F6-8910CE543DD6.jpeg",
     description: "Regular offline and online sessions connecting the community to experts, mentors, and the latest in blockchain.",
     duration: "Ongoing", format: "Offline + Twitter Spaces", participants: "Thousands reached", status: "Active",
     highlights: ["Monthly meetups in Awka","Weekly Twitter Spaces","Guest speakers from top protocols","Developer study groups","Project showcase sessions","Career guidance","Networking events","Women in Web3 sessions"],

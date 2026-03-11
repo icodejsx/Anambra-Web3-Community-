@@ -6,12 +6,12 @@ export const metadata: Metadata = { title: "Our Team | Anambra Web3 Community" }
 
 // Replace these with real team data
 const teamMembers = [
-  { name: "Community Founder", role: "Founder & Lead", bio: "Visionary behind the Anambra Web3 Community. Passionate about bringing blockchain education and opportunities to Southeast Nigeria.", avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&q=80", featured: true, twitter: "#", linkedin: "#", github: "#" },
-  { name: "Team Member", role: "Developer Relations", bio: "Bridges developers to the Web3 ecosystem. Leads the Cairo bootcamp and developer programs.", avatar: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=300&q=80", featured: false, twitter: "#", linkedin: "#", github: "#" },
-  { name: "Team Member", role: "Community Manager", bio: "Keeps the community engaged, informed, and growing. Manages social platforms and member experience.", avatar: "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=300&q=80", featured: false, twitter: "#", linkedin: "#", github: "#" },
-  { name: "Team Member", role: "Events Coordinator", bio: "The force behind our world-class conferences. Coordinates logistics, speakers, and partnerships.", avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=300&q=80", featured: false, twitter: "#", linkedin: "#", github: "#" },
-  { name: "Team Member", role: "Education Lead", bio: "Designs and delivers educational programs across the community.", avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300&q=80", featured: false, twitter: "#", linkedin: "#", github: "#" },
-  { name: "Team Member", role: "Partnerships Lead", bio: "Builds relationships with ecosystem partners, sponsors, and collaborators.", avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&q=80", featured: false, twitter: "#", linkedin: "#", github: "#" },
+  { name: "ken", role: "co-Founder & Lead", bio: "Visionary behind the Anambra Web3 Community. Passionate about bringing blockchain education and opportunities to Southeast Nigeria.", avatar: "/ken.jpg", featured: true, twitter: "#", linkedin: "#", github: "#" },
+  { name: "Zikora", role: "co-founder", bio: "Bridges developers to the Web3 ecosystem. Leads the Cairo bootcamp and developer programs.", avatar: "/zikora.png", featured: true, twitter: "#", linkedin: "#", github: "#" },
+  { name: "Good Pixel", role: "Designer", bio: "Keeps the community engaged, informed, and growing. Manages social platforms and member experience.", avatar: "/godpixel.jpg", featured: false, twitter: "#", linkedin: "#", github: "#" },
+  { name: "Team Member", role: "Events Coordinator", bio: "The force behind our world-class conferences. Coordinates logistics, speakers, and partnerships.", avatar: "/zikora.png", featured: false, twitter: "#", linkedin: "#", github: "#" },
+  { name: "Team Member", role: "Education Lead", bio: "Designs and delivers educational programs across the community.", avatar: "/zikora.png", featured: false, twitter: "#", linkedin: "#", github: "#" },
+  { name: "Team Member", role: "Partnerships Lead", bio: "Builds relationships with ecosystem partners, sponsors, and collaborators.", avatar: "/zikora.png", featured: false, twitter: "#", linkedin: "#", github: "#" },
 ];
 
 export default function TeamPage() {
@@ -47,12 +47,12 @@ export default function TeamPage() {
                 style={{transitionDelay:`${i*80}ms`}}
               >
                 {/* Photo */}
-                <div className="img-hover h-56 overflow-hidden relative">
+                <div className="img-hover h-96 overflow-hidden relative">
                   <img src={member.avatar} alt={member.name} className="w-full h-full object-cover object-top" loading="lazy" />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#010147] via-transparent to-transparent" />
                   {member.featured && (
                     <div className="absolute top-4 right-4 px-2.5 py-1 bg-primary text-dark text-xs font-['Space_Mono'] font-bold rounded-full">
-                      ★ Founder
+                      ★ Co-Founder
                     </div>
                   )}
                 </div>

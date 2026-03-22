@@ -5,6 +5,14 @@ import Link from "next/link";
 export const metadata: Metadata = { title: "Our Team | Anambra Web3 Community" };
 
 // Replace these with real team data
+const teamMembers = [
+  { name: "ken", role: "co-Founder & Lead", bio: "Visionary behind the Anambra Web3 Community. Passionate about bringing blockchain education and opportunities to Southeast Nigeria.", avatar: "/ken.jpg", featured: true, twitter: "#", linkedin: "#", github: "#" },
+  { name: "Zikora", role: "co-founder", bio: "Bridges developers to the Web3 ecosystem. Leads the Cairo bootcamp and developer programs.", avatar: "/zikora.png", featured: true, twitter: "#", linkedin: "#", github: "#" },
+  { name: "Good Pixel", role: "Designer", bio: "Keeps the community engaged, informed, and growing. Manages social platforms and member experience.", avatar: "/godpixel.jpg", featured: false, twitter: "#", linkedin: "#", github: "#" },
+  { name: "Team Member", role: "Events Coordinator", bio: "The force behind our world-class conferences. Coordinates logistics, speakers, and partnerships.", avatar: "/zikora.png", featured: false, twitter: "#", linkedin: "#", github: "#" },
+  { name: "Team Member", role: "Education Lead", bio: "Designs and delivers educational programs across the community.", avatar: "/zikora.png", featured: false, twitter: "#", linkedin: "#", github: "#" },
+  { name: "Team Member", role: "Partnerships Lead", bio: "Builds relationships with ecosystem partners, sponsors, and collaborators.", avatar: "/zikora.png", featured: false, twitter: "#", linkedin: "#", github: "#" },
+];
 
 export default function TeamPage() {
   return (

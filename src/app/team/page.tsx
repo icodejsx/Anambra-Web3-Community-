@@ -4,7 +4,6 @@ import Link from "next/link";
 
 export const metadata: Metadata = { title: "Our Team | Anambra Web3 Community" };
 
-// Replace these with real team data
 
 
 export default function TeamPage() {

@@ -4,15 +4,65 @@ import Link from "next/link";
 
 export const metadata: Metadata = { title: "Our Team | Anambra Web3 Community" };
 
-// Replace these with real team data
 const teamMembers = [
-  { name: "ken", role: "co-Founder & Lead", bio: "Visionary behind the Anambra Web3 Community. Passionate about bringing blockchain education and opportunities to Southeast Nigeria.", avatar: "/ken.jpg", featured: true, twitter: "#", linkedin: "#", github: "#" },
-  { name: "Zikora", role: "co-founder", bio: "Bridges developers to the Web3 ecosystem. Leads the Cairo bootcamp and developer programs.", avatar: "/zikora.png", featured: true, twitter: "#", linkedin: "#", github: "#" },
-  { name: "Good Pixel", role: "Designer", bio: "Keeps the community engaged, informed, and growing. Manages social platforms and member experience.", avatar: "/godpixel.jpg", featured: false, twitter: "#", linkedin: "#", github: "#" },
-  { name: "Team Member", role: "Events Coordinator", bio: "The force behind our world-class conferences. Coordinates logistics, speakers, and partnerships.", avatar: "/zikora.png", featured: false, twitter: "#", linkedin: "#", github: "#" },
-  { name: "Team Member", role: "Education Lead", bio: "Designs and delivers educational programs across the community.", avatar: "/zikora.png", featured: false, twitter: "#", linkedin: "#", github: "#" },
-  { name: "Team Member", role: "Partnerships Lead", bio: "Builds relationships with ecosystem partners, sponsors, and collaborators.", avatar: "/zikora.png", featured: false, twitter: "#", linkedin: "#", github: "#" },
+  {
+    name: "Ken",
+    role: "Co-Founder & Community Lead",
+    bio: "The driving force behind Anambra Web3 Community. Ken is on a mission to make Southeast Nigeria a hub for blockchain innovation — building the ecosystem from the ground up through education, events, and community.",
+    avatar: "/ken.jpg",
+    featured: true,
+    twitter: "#", linkedin: "#", github: "#"
+  },
+  {
+    name: "Zikora",
+    role: "Co-Founder",
+    bio: "Co-building Southeast Nigeria's Web3 future from Anambra. Zikora also co-founded and leads Anambra Techies community, making him one of the most committed builders in the region's tech ecosystem.",
+    avatar: "/zikora.png",
+    featured: true,
+    twitter: "#", linkedin: "#", github: "#"
+  },
+  {
+    name: "Good Pixel",
+    role: "Brand Designer",
+    bio: "The creative eye behind Anambra Web3's visual identity. Good Pixel crafts the brand language that makes the community instantly recognizable — from conference designs to every piece of content we put out.",
+    avatar: "/godpixel.jpg",
+    featured: false,
+    twitter: "#", linkedin: "#", github: "#"
+  },
+  {
+    name: "Vziko",
+    role: "Head of Operations",
+    bio: "Keeps everything running smoothly behind the scenes. Vziko manages the systems, processes, and coordination that allow Anambra Web3 to operate at scale.",
+    avatar: "/vziko.jpg",
+    featured: false,
+    twitter: "#", linkedin: "#", github: "#"
+  },
+  {
+    name: "Lucy",
+    role: "Media Lead",
+    bio: "The voice and lens of Anambra Web3. Lucy leads all media coverage, content creation, and storytelling — making sure every event, milestone, and community moment is captured and shared with the world.",
+    avatar: "/lucy.jpg",
+    featured: false,
+    twitter: "#", linkedin: "#", github: "#"
+  },
+  {
+    name: "Destiny",
+    role: "Head of Partnerships",
+    bio: "Builds and maintains the relationships that power the community. Destiny connects Anambra Web3 with ecosystem partners, sponsors, and collaborators across Nigeria and beyond.",
+    avatar: "/destiny.jpg",
+    featured: false,
+    twitter: "#", linkedin: "#", github: "#"
+  },
+  {
+    name: "Sam",
+    role: "Head of Partnerships",
+    bio: "Works alongside Destiny to grow and deepen the community's partner network — bringing in the right organizations to support the mission of building Web3 in Southeast Nigeria.",
+    avatar: "/sam.jpg",
+    featured: false,
+    twitter: "#", linkedin: "#", github: "#"
+  },
 ];
+
 
 export default function TeamPage() {
   return (

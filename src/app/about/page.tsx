@@ -39,28 +39,50 @@ export default function AboutPage() {
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-['Space_Mono'] font-bold uppercase tracking-widest bg-primary/15 text-primary border border-primary/25 mb-6 stagger-child">
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-mono font-bold uppercase tracking-widest bg-primary/15 text-primary border border-primary/25 mb-6 stagger-child">
                 Our Story
               </span>
-              <h1 className="font-['Syne'] font-bold text-5xl md:text-7xl text-white leading-[1.0] mb-6 stagger-child">
+              <h1 className="font-syne font-bold text-5xl md:text-7xl text-white leading-[1.0] mb-6 stagger-child">
                 Born in <span className="text-gradient">Anambra.</span><br />
                 Built for<br />the World.
               </h1>
-              <p className="text-white/55 font-['DM_Sans'] text-xl leading-relaxed stagger-child">
+              <p className="text-white/55 font-dm text-xl leading-relaxed stagger-child">
                 From a small WhatsApp group to Southeast Nigeria&apos;s most impactful blockchain ecosystem — this is our story.
               </p>
             </div>
 
             {/* Collage */}
             <div className="grid grid-cols-2 gap-3 stagger-child">
-              <div className="img-hover col-span-2 h-48 rounded-2xl overflow-hidden glass">
-                <img src="/Anambraweb3conf-400.JPG" alt="Conference" className="w-full h-full object-cover" />
+              <div className="img-hover relative col-span-2 h-48 rounded-2xl overflow-hidden glass">
+                <Image
+                  src="/Anambraweb3conf-400.JPG"
+                  alt="Conference"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  quality={82}
+                  priority
+                />
               </div>
-              <div className="img-hover h-32 rounded-2xl overflow-hidden glass">
-                <img src="/Anambraweb3conf-549.JPG" alt="Community" className="w-full h-full object-cover" />
+              <div className="img-hover relative h-32 rounded-2xl overflow-hidden glass">
+                <Image
+                  src="/Anambraweb3conf-549.JPG"
+                  alt="Community"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 1024px) 50vw, 25vw"
+                  quality={82}
+                />
               </div>
-              <div className="img-hover h-32 rounded-2xl overflow-hidden glass">
-                <img src="/Anambraweb3conf-362.JPG" alt="Hackathon" className="w-full h-full object-cover" />
+              <div className="img-hover relative h-32 rounded-2xl overflow-hidden glass">
+                <Image
+                  src="/Anambraweb3conf-362.JPG"
+                  alt="Hackathon"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 1024px) 50vw, 25vw"
+                  quality={82}
+                />
               </div>
             </div>
           </div>
@@ -87,9 +109,9 @@ export default function AboutPage() {
               <div className="w-12 h-12 rounded-xl bg-primary/20 flex items-center justify-center mb-6">
                 <Target size={24} className="text-primary" />
               </div>
-              <div className="font-['Space_Mono'] text-primary/50 text-xs uppercase tracking-widest mb-3">Our Mission</div>
-              <h2 className="font-['Syne'] font-bold text-2xl text-white mb-4">Empowering the Next Generation</h2>
-              <p className="text-white/55 font-['DM_Sans'] text-base leading-relaxed">
+              <div className="font-mono text-primary/50 text-xs uppercase tracking-widest mb-3">Our Mission</div>
+              <h2 className="font-syne font-bold text-2xl text-white mb-4">Empowering the Next Generation</h2>
+              <p className="text-white/55 font-dm text-base leading-relaxed">
                 To educate young people about blockchain, train developers, create digital economy jobs,
                 support startups, and build a strong network of Web3 builders across Nigeria.
               </p>
@@ -98,9 +120,9 @@ export default function AboutPage() {
               <div className="w-12 h-12 rounded-xl bg-primary/20 flex items-center justify-center mb-6">
                 <Eye size={24} className="text-primary" />
               </div>
-              <div className="font-['Space_Mono'] text-primary/50 text-xs uppercase tracking-widest mb-3">Our Vision</div>
-              <h2 className="font-['Syne'] font-bold text-2xl text-white mb-4">Anambra as Africa&apos;s Web3 Hub</h2>
-              <p className="text-white/55 font-['DM_Sans'] text-base leading-relaxed">
+              <div className="font-mono text-primary/50 text-xs uppercase tracking-widest mb-3">Our Vision</div>
+              <h2 className="font-syne font-bold text-2xl text-white mb-4">Anambra as Africa&apos;s Web3 Hub</h2>
+              <p className="text-white/55 font-dm text-base leading-relaxed">
                 To build the most impactful Web3 ecosystem in Southeast Nigeria, producing globally
                 competitive developers, creators, founders, and innovators.
               </p>
@@ -113,8 +135,8 @@ export default function AboutPage() {
       <section className="py-24 border-t border-primary/10">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="scale-reveal text-center mb-16">
-            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-['Space_Mono'] font-bold uppercase tracking-widest bg-primary/15 text-primary border border-primary/25 mb-4">Our Journey</span>
-            <h2 className="font-['Syne'] font-bold text-4xl md:text-5xl text-white mt-2">From Inception to <span className="text-gradient">Impact</span></h2>
+            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-mono font-bold uppercase tracking-widest bg-primary/15 text-primary border border-primary/25 mb-4">Our Journey</span>
+            <h2 className="font-syne font-bold text-4xl md:text-5xl text-white mt-2">From Inception to <span className="text-gradient">Impact</span></h2>
           </div>
 
           <div className="relative space-y-6">
@@ -123,9 +145,9 @@ export default function AboutPage() {
               <div key={item.year} className="stagger-child relative pl-16" style={{transitionDelay:`${i*90}ms`}}>
                 <div className={`absolute left-4 top-5 w-4 h-4 rounded-full ${item.color} border-4 border-[#010147] -translate-x-1/2 shadow-lg`} style={{boxShadow:`0 0 12px 2px ${item.color === "bg-primary" ? "rgba(158,148,255,0.5)" : "rgba(255,255,255,0.1)"}`}} />
                 <div className="glass shimmer rounded-2xl p-6 hover:border-primary/30 transition-all duration-300 hover:-translate-x-1">
-                  <div className="font-['Space_Mono'] text-primary font-bold text-sm mb-2">{item.year}</div>
-                  <h3 className="font-['Syne'] font-bold text-xl text-white mb-2">{item.title}</h3>
-                  <p className="text-white/50 font-['DM_Sans'] text-sm leading-relaxed">{item.description}</p>
+                  <div className="font-mono text-primary font-bold text-sm mb-2">{item.year}</div>
+                  <h3 className="font-syne font-bold text-xl text-white mb-2">{item.title}</h3>
+                  <p className="text-white/50 font-dm text-sm leading-relaxed">{item.description}</p>
                 </div>
               </div>
             ))}
@@ -137,15 +159,15 @@ export default function AboutPage() {
       <section className="py-24 border-t border-primary/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="scale-reveal text-center mb-16">
-            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-['Space_Mono'] font-bold uppercase tracking-widest bg-primary/15 text-primary border border-primary/25 mb-4">Our Values</span>
-            <h2 className="font-['Syne'] font-bold text-4xl text-white mt-2">What We Stand For</h2>
+            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-mono font-bold uppercase tracking-widest bg-primary/15 text-primary border border-primary/25 mb-4">Our Values</span>
+            <h2 className="font-syne font-bold text-4xl text-white mt-2">What We Stand For</h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {values.map((v, i) => (
               <div key={v.title} className="stagger-child glass shimmer rounded-2xl p-6 group hover:border-primary/35 transition-all duration-500 hover:-translate-y-1" style={{transitionDelay:`${i*70}ms`}}>
                 <CheckCircle size={20} className="text-primary mb-4" />
-                <h3 className="font-['Syne'] font-bold text-white text-base mb-2">{v.title}</h3>
-                <p className="text-white/45 font-['DM_Sans'] text-sm leading-relaxed">{v.desc}</p>
+                <h3 className="font-syne font-bold text-white text-base mb-2">{v.title}</h3>
+                <p className="text-white/45 font-dm text-sm leading-relaxed">{v.desc}</p>
               </div>
             ))}
           </div>
@@ -155,11 +177,11 @@ export default function AboutPage() {
       {/* CTA */}
       <section className="py-20 border-t border-primary/10">
         <div className="max-w-3xl mx-auto px-4 text-center scale-reveal">
-          <h2 className="font-['Syne'] font-bold text-4xl text-white mb-4">Join the Movement</h2>
-          <p className="text-white/55 font-['DM_Sans'] mb-8">Whether you&apos;re a developer, student, founder, or just curious — there&apos;s a place for you.</p>
+          <h2 className="font-syne font-bold text-4xl text-white mb-4">Join the Movement</h2>
+          <p className="text-white/55 font-dm mb-8">Whether you&apos;re a developer, student, founder, or just curious — there&apos;s a place for you.</p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Link href="/events" className="px-7 py-3.5 rounded-2xl bg-primary text-dark font-['Syne'] font-bold hover:bg-primary-light transition-all glow hover:glow-strong hover:scale-105">Explore Programs</Link>
-            <Link href="/team" className="px-7 py-3.5 rounded-2xl border border-primary/40 text-primary font-['Syne'] font-bold hover:bg-primary/10 hover:border-primary transition-all">Meet the Team</Link>
+            <Link href="/events" className="px-7 py-3.5 rounded-2xl bg-primary text-dark font-syne font-bold hover:bg-primary-light transition-all glow hover:glow-strong hover:scale-105">Explore Programs</Link>
+            <Link href="/team" className="px-7 py-3.5 rounded-2xl border border-primary/40 text-primary font-syne font-bold hover:bg-primary/10 hover:border-primary transition-all">Meet the Team</Link>
           </div>
         </div>
       </section>

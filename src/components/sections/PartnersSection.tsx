@@ -26,10 +26,10 @@ export default function PartnersSection() {
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-10">
         <div className="scale-reveal text-center">
-          <span className="font-['Space_Mono'] text-primary/40 text-[10px] uppercase tracking-[0.35em]">
+          <span className="font-mono text-primary/40 text-[10px] uppercase tracking-[0.35em]">
             Trusted By &amp; Partnered With
           </span>
-          <h2 className="font-['Syne'] font-bold text-3xl text-white mt-3">
+          <h2 className="font-syne font-bold text-3xl text-white mt-3">
             Backed by the Best in <span className="text-gradient">Web3</span>
           </h2>
         </div>
@@ -43,17 +43,21 @@ export default function PartnersSection() {
               className="inline-flex items-center gap-3 glass rounded-xl px-5 py-3 shrink-0 hover:border-primary/30 transition-all duration-300 hover:-translate-y-0.5 cursor-none"
             >
               {p.logo ? (
-                <div className="w-8 h-8 rounded-md overflow-hidden shrink-0 flex items-center justify-center bg-white/10">
-                  <img
+                <div className="relative w-8 h-8 rounded-md overflow-hidden shrink-0 flex items-center justify-center bg-white/10">
+                  <Image
                     src={p.logo}
                     alt={p.name}
-                    className="w-full h-full object-contain"
+                    width={32}
+                    height={32}
+                    className="object-contain"
+                    sizes="32px"
+                    quality={85}
                   />
                 </div>
               ) : (
                 <span className="text-lg leading-none">{p.icon}</span>
               )}
-              <span className="font-['Syne'] font-bold text-white/65 text-sm whitespace-nowrap">
+              <span className="font-syne font-bold text-white/65 text-sm whitespace-nowrap">
                 {p.name}
               </span>
             </div>

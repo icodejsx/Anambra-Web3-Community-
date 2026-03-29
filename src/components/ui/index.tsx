@@ -46,7 +46,7 @@ export function FadeInSection({ children, className, delay = 0 }: { children: Re
 export function Badge({ children, variant = "primary" }: { children: React.ReactNode; variant?: "primary" | "outline" | "dark" }) {
   return (
     <span className={clsx(
-      "inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-['Space_Mono'] font-bold uppercase tracking-widest",
+      "inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-mono font-bold uppercase tracking-widest",
       variant === "primary" && "bg-primary/15 text-primary border border-primary/25",
       variant === "outline" && "bg-transparent text-primary border border-primary/50",
       variant === "dark" && "bg-dark/60 text-white/60 border border-white/10"
@@ -60,8 +60,8 @@ export function SectionHeader({ eyebrow, title, subtitle, centered = false }: { 
   return (
     <div className={clsx("mb-16", centered && "text-center")}>
       {eyebrow && <div className={clsx("mb-4", centered && "flex justify-center")}><Badge>{eyebrow}</Badge></div>}
-      <h2 className="font-['Syne'] font-bold text-4xl md:text-5xl text-white leading-tight mb-4">{title}</h2>
-      {subtitle && <p className={clsx("text-white/55 font-['DM_Sans'] text-lg leading-relaxed", centered ? "max-w-2xl mx-auto" : "max-w-xl")}>{subtitle}</p>}
+      <h2 className="font-syne font-bold text-4xl md:text-5xl text-white leading-tight mb-4">{title}</h2>
+      {subtitle && <p className={clsx("text-white/55 font-dm text-lg leading-relaxed", centered ? "max-w-2xl mx-auto" : "max-w-xl")}>{subtitle}</p>}
     </div>
   );
 }
@@ -69,10 +69,10 @@ export function SectionHeader({ eyebrow, title, subtitle, centered = false }: { 
 export function StatCard({ value, label, suffix }: { value: number; label: string; suffix?: string }) {
   return (
     <div className="glass shimmer rounded-2xl p-6 text-center group hover:border-primary/30 transition-all duration-300 hover:-translate-y-1">
-      <div className="font-['Syne'] font-bold text-4xl md:text-5xl text-gradient-primary mb-2">
+      <div className="font-syne font-bold text-4xl md:text-5xl text-gradient-primary mb-2">
         <AnimatedCounter target={value} suffix={suffix || "+"} />
       </div>
-      <div className="text-white/55 font-['DM_Sans'] text-sm">{label}</div>
+      <div className="text-white/55 font-dm text-sm">{label}</div>
     </div>
   );
 }

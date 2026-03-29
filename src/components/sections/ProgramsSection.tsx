@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Code2, BookOpen, Zap, Mic } from "lucide-react";
 
@@ -52,14 +53,14 @@ export default function ProgramsSection() {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="scale-reveal flex flex-col md:flex-row md:items-end justify-between gap-4 mb-16">
           <div>
-            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-['Space_Mono'] font-bold uppercase tracking-widest bg-primary/15 text-primary border border-primary/25 mb-4">
+            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-mono font-bold uppercase tracking-widest bg-primary/15 text-primary border border-primary/25 mb-4">
               Training Programs
             </span>
-            <h2 className="font-['Syne'] font-bold text-4xl md:text-5xl text-white leading-tight">
+            <h2 className="font-syne font-bold text-4xl md:text-5xl text-white leading-tight">
               Learn. Build. <span className="text-gradient">Ship.</span>
             </h2>
           </div>
-          <Link href="/events" className="inline-flex items-center gap-2 text-primary font-['Syne'] font-bold text-sm hover:gap-3 transition-all group">
+          <Link href="/events" className="inline-flex items-center gap-2 text-primary font-syne font-bold text-sm hover:gap-3 transition-all group">
             All programs <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
           </Link>
         </div>
@@ -75,9 +76,16 @@ export default function ProgramsSection() {
                 >
                   {/* Image header */}
                   <div className="img-hover h-40 overflow-hidden relative">
-                    <img src={prog.image} alt={prog.title} className="w-full h-full object-cover" />
+                    <Image
+                      src={prog.image}
+                      alt={prog.title}
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                      quality={82}
+                    />
                     <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#010147]/80" />
-                    <span className={`absolute top-4 left-4 inline-flex items-center px-2.5 py-1 rounded-full text-xs font-['Space_Mono'] font-bold uppercase tracking-wider border ${prog.tagColor}`}>
+                    <span className={`absolute top-4 left-4 inline-flex items-center px-2.5 py-1 rounded-full text-xs font-mono font-bold uppercase tracking-wider border ${prog.tagColor}`}>
                       {prog.tag}
                     </span>
                   </div>
@@ -85,11 +93,11 @@ export default function ProgramsSection() {
                   {/* Content */}
                   <div className="p-6">
                     <div className="flex items-start justify-between mb-3">
-                      <h3 className="font-['Syne'] font-bold text-lg text-white group-hover:text-primary transition-colors">{prog.title}</h3>
+                      <h3 className="font-syne font-bold text-lg text-white group-hover:text-primary transition-colors">{prog.title}</h3>
                       <ArrowRight size={16} className="text-primary/40 group-hover:text-primary group-hover:translate-x-1 transition-all shrink-0 mt-1" />
                     </div>
-                    <p className="text-white/50 font-['DM_Sans'] text-sm leading-relaxed mb-4">{prog.description}</p>
-                    <span className="font-['Space_Mono'] text-xs font-bold text-primary">✓ {prog.stats}</span>
+                    <p className="text-white/50 font-dm text-sm leading-relaxed mb-4">{prog.description}</p>
+                    <span className="font-mono text-xs font-bold text-primary">✓ {prog.stats}</span>
                   </div>
                 </div>
               </Link>

@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Image from "next/image";
 import { BookOpen, Code2, Zap, Mic, Calendar, Clock, Users, CheckCircle, ArrowRight } from "lucide-react";
 import Link from "next/link";
 
@@ -50,13 +51,13 @@ export default function EventsPage() {
         <div className="orb" style={{width:400,height:400,background:"rgba(158,148,255,0.07)",top:"10%",right:"5%",animationDuration:"16s"}} />
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-['Space_Mono'] font-bold uppercase tracking-widest bg-primary/15 text-primary border border-primary/25 mb-6 stagger-child">
+          <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-mono font-bold uppercase tracking-widest bg-primary/15 text-primary border border-primary/25 mb-6 stagger-child">
             Programs & Events
           </span>
-          <h1 className="font-['Syne'] font-bold text-5xl md:text-8xl text-white leading-[1.0] mt-4 mb-6 stagger-child">
+          <h1 className="font-syne font-bold text-5xl md:text-8xl text-white leading-[1.0] mt-4 mb-6 stagger-child">
             Learn.<br /><span className="text-gradient">Build.</span><br />Connect.
           </h1>
-          <p className="text-white/55 font-['DM_Sans'] text-xl max-w-xl stagger-child">
+          <p className="text-white/55 font-dm text-xl max-w-xl stagger-child">
             From beginner-friendly crypto education to advanced developer bootcamps — our programs meet you exactly where you are.
           </p>
         </div>
@@ -72,19 +73,19 @@ export default function EventsPage() {
                 <div className={`grid grid-cols-1 lg:grid-cols-2 gap-14 items-center ${i % 2 !== 0 ? "lg:flex-row-reverse" : ""}`}>
                   {/* Content */}
                   <div className={`${i%2!==0?"lg:order-2":""} scale-reveal`}>
-                    <span className={`inline-flex items-center px-3 py-1 rounded-full text-xs font-['Space_Mono'] font-bold uppercase tracking-widest border mb-4 ${prog.tagColor}`}>
+                    <span className={`inline-flex items-center px-3 py-1 rounded-full text-xs font-mono font-bold uppercase tracking-widest border mb-4 ${prog.tagColor}`}>
                       {prog.tag} · {prog.status}
                     </span>
-                    <h2 className="font-['Syne'] font-bold text-3xl md:text-4xl text-white mb-4">{prog.title}</h2>
-                    <p className="text-white/55 font-['DM_Sans'] text-base leading-relaxed mb-6">{prog.description}</p>
+                    <h2 className="font-syne font-bold text-3xl md:text-4xl text-white mb-4">{prog.title}</h2>
+                    <p className="text-white/55 font-dm text-base leading-relaxed mb-6">{prog.description}</p>
                     <div className="flex flex-wrap gap-4 mb-6">
                       {[{icon:Clock,val:prog.duration},{icon:Calendar,val:prog.format},{icon:Users,val:prog.participants}].map(({icon:I,val})=>(
-                        <div key={val} className="flex items-center gap-2 text-white/45 font-['DM_Sans'] text-sm">
+                        <div key={val} className="flex items-center gap-2 text-white/45 font-dm text-sm">
                           <I size={13} className="text-primary" />{val}
                         </div>
                       ))}
                     </div>
-                    <Link href="/contact" className="inline-flex items-center gap-2 px-6 py-3 rounded-2xl bg-primary text-dark font-['Syne'] font-bold text-sm hover:bg-primary-light transition-all glow hover:scale-105">
+                    <Link href="/contact" className="inline-flex items-center gap-2 px-6 py-3 rounded-2xl bg-primary text-dark font-syne font-bold text-sm hover:bg-primary-light transition-all glow hover:scale-105">
                       Join Next Cohort <ArrowRight size={15} />
                     </Link>
                   </div>
@@ -92,19 +93,27 @@ export default function EventsPage() {
                   {/* Visual */}
                   <div className={`${i%2!==0?"lg:order-1":""} stagger-child`}>
                     <div className="glass shimmer rounded-3xl overflow-hidden">
-                      <div className="img-hover h-52 overflow-hidden">
-                        <img src={prog.image} alt={prog.title} className="w-full h-full object-cover" loading="lazy" />
+                      <div className="img-hover relative h-52 overflow-hidden">
+                        <Image
+                          src={prog.image}
+                          alt={prog.title}
+                          fill
+                          className="object-cover"
+                          sizes="(max-width: 1024px) 100vw, 50vw"
+                          quality={82}
+                          priority={i === 0}
+                        />
                       </div>
                       <div className="p-6">
                         <div className="flex items-center gap-2 mb-4">
                           <div className={`w-8 h-8 rounded-lg ${prog.tagColor.split(" ")[1]} flex items-center justify-center`}>
                             <Icon size={16} className={prog.tagColor.split(" ")[0]} />
                           </div>
-                          <span className="font-['Syne'] font-bold text-white text-sm">What You&apos;ll Learn</span>
+                          <span className="font-syne font-bold text-white text-sm">What You&apos;ll Learn</span>
                         </div>
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-1.5">
                           {prog.highlights.map(h=>(
-                            <div key={h} className="flex items-start gap-2 text-white/50 font-['DM_Sans'] text-xs">
+                            <div key={h} className="flex items-start gap-2 text-white/50 font-dm text-xs">
                               <CheckCircle size={12} className="text-primary shrink-0 mt-0.5" />{h}
                             </div>
                           ))}

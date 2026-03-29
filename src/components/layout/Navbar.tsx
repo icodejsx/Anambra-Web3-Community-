@@ -59,7 +59,14 @@ export default function Navbar() {
               </div>
             </div> */}
 
-            <Image src="/logomain.png" alt="Anambra Web3 Logo" width={140} height={400} className="rounded-xl" />
+            <Image
+              src="/logomain.png"
+              alt="Anambra Web3 Logo"
+              width={160}
+              height={48}
+              className="h-10 w-auto rounded-xl object-contain"
+              priority
+            />
           </Link>
 
           {/* Desktop Nav */}

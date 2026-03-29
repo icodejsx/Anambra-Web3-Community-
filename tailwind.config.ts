@@ -8,6 +8,13 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        syne: ["var(--font-syne)", "sans-serif"],
+        dm: ["var(--font-dm-sans)", "sans-serif"],
+        mono: ["var(--font-space-mono)", "monospace"],
+        heading: ["var(--font-syne)", "sans-serif"],
+        body: ["var(--font-dm-sans)", "sans-serif"],
+      },
       colors: {
         primary: "#9e94ff",
         "primary-light": "#c4beff",

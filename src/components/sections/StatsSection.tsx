@@ -33,7 +33,7 @@ function Counter({ target, suffix }: { target: number; suffix: string }) {
     if (ref.current) obs.observe(ref.current);
     return () => obs.disconnect();
   }, [target]);
-  return <div ref={ref} className="font-['Syne'] font-bold text-5xl text-gradient-primary counter-number">{count.toLocaleString()}{suffix}</div>;
+  return <div ref={ref} className="font-syne font-bold text-5xl text-gradient-primary counter-number">{count.toLocaleString()}{suffix}</div>;
 }
 
 export default function StatsSection() {
@@ -47,7 +47,7 @@ export default function StatsSection() {
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-14 scale-reveal">
-          <p className="font-['Space_Mono'] text-primary/50 text-xs uppercase tracking-[0.3em]">Our Impact In Numbers</p>
+          <p className="font-mono text-primary/50 text-xs uppercase tracking-[0.3em]">Our Impact In Numbers</p>
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
@@ -59,8 +59,8 @@ export default function StatsSection() {
             >
               <div className="text-2xl mb-3">{stat.icon}</div>
               <Counter target={stat.value} suffix={stat.suffix} />
-              <div className="text-white font-['DM_Sans'] text-xs font-semibold mt-2 mb-1">{stat.label}</div>
-              <div className="text-white/35 font-['DM_Sans'] text-[10px] leading-tight">{stat.sub}</div>
+              <div className="text-white font-dm text-xs font-semibold mt-2 mb-1">{stat.label}</div>
+              <div className="text-white/35 font-dm text-[10px] leading-tight">{stat.sub}</div>
             </div>
           ))}
         </div>

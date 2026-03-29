@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Calendar, MapPin, Users } from "lucide-react";
 
@@ -51,15 +52,15 @@ export default function ConferenceHighlight() {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="scale-reveal flex flex-col md:flex-row md:items-end justify-between gap-4 mb-16">
           <div>
-            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-['Space_Mono'] font-bold uppercase tracking-widest bg-primary/15 text-primary border border-primary/25 mb-4">
+            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-mono font-bold uppercase tracking-widest bg-primary/15 text-primary border border-primary/25 mb-4">
               Flagship Event
             </span>
-            <h2 className="font-['Syne'] font-bold text-4xl md:text-5xl text-white leading-tight">
+            <h2 className="font-syne font-bold text-4xl md:text-5xl text-white leading-tight">
               The Anambra Web3{" "}
               <span className="text-gradient">Conference</span>
             </h2>
           </div>
-          <Link href="/conference" className="inline-flex items-center gap-2 text-primary font-['Syne'] font-bold text-sm hover:gap-3 transition-all duration-300 group">
+          <Link href="/conference" className="inline-flex items-center gap-2 text-primary font-syne font-bold text-sm hover:gap-3 transition-all duration-300 group">
             View all editions <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
           </Link>
         </div>
@@ -73,17 +74,25 @@ export default function ConferenceHighlight() {
             >
               {/* Image */}
               <div className="img-hover h-44 relative overflow-hidden">
-                <img src={conf.image} alt={`Conference ${conf.year}`} className="w-full h-full object-cover" />
+                <Image
+                  src={conf.image}
+                  alt={`Conference ${conf.year}`}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                  quality={82}
+                  priority={i === 0}
+                />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#010147] via-transparent to-transparent" />
 
                 {/* Year overlay */}
                 <div className="absolute top-4 left-4">
-                  <span className="font-['Space_Mono'] font-bold text-3xl text-white/20">{conf.year}</span>
+                  <span className="font-mono font-bold text-3xl text-white/20">{conf.year}</span>
                 </div>
 
                 {conf.status === "upcoming" && (
                   <div className="absolute top-4 right-4">
-                    <span className="px-2.5 py-1 bg-primary text-dark text-xs font-['Space_Mono'] font-bold rounded-full animate-pulse">
+                    <span className="px-2.5 py-1 bg-primary text-dark text-xs font-mono font-bold rounded-full animate-pulse">
                       UPCOMING
                     </span>
                   </div>
@@ -92,23 +101,23 @@ export default function ConferenceHighlight() {
 
               {/* Content */}
               <div className="p-6 flex-1 flex flex-col">
-                <div className="font-['Space_Mono'] text-primary/50 text-[10px] uppercase tracking-widest mb-2">Edition {conf.edition}</div>
-                <h3 className="font-['Syne'] font-bold text-xl text-white mb-1">Anambra Web3 Conference {conf.edition}</h3>
-                <p className="text-primary font-['DM_Sans'] text-sm mb-4 italic">&ldquo;{conf.theme}&rdquo;</p>
-                <p className="text-white/45 font-['DM_Sans'] text-sm leading-relaxed mb-5 flex-1">{conf.description}</p>
+                <div className="font-mono text-primary/50 text-[10px] uppercase tracking-widest mb-2">Edition {conf.edition}</div>
+                <h3 className="font-syne font-bold text-xl text-white mb-1">Anambra Web3 Conference {conf.edition}</h3>
+                <p className="text-primary font-dm text-sm mb-4 italic">&ldquo;{conf.theme}&rdquo;</p>
+                <p className="text-white/45 font-dm text-sm leading-relaxed mb-5 flex-1">{conf.description}</p>
 
                 {/* Meta */}
                 <div className="space-y-1.5 mb-5">
-                  <div className="flex items-center gap-2 text-white/35 text-xs font-['DM_Sans']"><Calendar size={11} className="text-primary/60" />{conf.date}</div>
-                  <div className="flex items-center gap-2 text-white/35 text-xs font-['DM_Sans']"><MapPin size={11} className="text-primary/60" />{conf.location}</div>
-                  <div className="flex items-center gap-2 text-white/35 text-xs font-['DM_Sans']"><Users size={11} className="text-primary/60" />{conf.attendees} Attendees</div>
+                  <div className="flex items-center gap-2 text-white/35 text-xs font-dm"><Calendar size={11} className="text-primary/60" />{conf.date}</div>
+                  <div className="flex items-center gap-2 text-white/35 text-xs font-dm"><MapPin size={11} className="text-primary/60" />{conf.location}</div>
+                  <div className="flex items-center gap-2 text-white/35 text-xs font-dm"><Users size={11} className="text-primary/60" />{conf.attendees} Attendees</div>
                 </div>
 
                 {/* Mini stats */}
                 <div className="grid grid-cols-3 gap-2 mb-5">
                   {[{v:conf.attendees,l:"Attendees"},{v:conf.speakers,l:"Speakers"},{v:conf.partners,l:"Partners"}].map(s=>(
                     <div key={s.l} className="bg-primary/6 rounded-xl p-2 text-center">
-                      <div className="font-['Syne'] font-bold text-primary text-sm">{s.v}</div>
+                      <div className="font-syne font-bold text-primary text-sm">{s.v}</div>
                       <div className="text-white/35 text-[10px]">{s.l}</div>
                     </div>
                   ))}
@@ -116,7 +125,7 @@ export default function ConferenceHighlight() {
 
                 <Link
                   href={`/conference#${conf.year}`}
-                  className={`inline-flex items-center justify-center gap-2 py-3 rounded-xl font-['Syne'] font-bold text-sm transition-all duration-300 group/btn ${
+                  className={`inline-flex items-center justify-center gap-2 py-3 rounded-xl font-syne font-bold text-sm transition-all duration-300 group/btn ${
                     conf.status === "upcoming"
                       ? "bg-primary text-dark hover:bg-primary-light glow"
                       : "border border-primary/25 text-primary hover:bg-primary/10 hover:border-primary/50"

@@ -19,25 +19,25 @@ export default function AboutSnippet() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
           {/* Left */}
           <div className="scale-reveal">
-            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-['Space_Mono'] font-bold uppercase tracking-widest bg-primary/15 text-primary border border-primary/25 mb-6">
+            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-mono font-bold uppercase tracking-widest bg-primary/15 text-primary border border-primary/25 mb-6">
               Who We Are
             </span>
-            <h2 className="font-['Syne'] font-bold text-4xl md:text-5xl text-white leading-tight mb-6">
+            <h2 className="font-syne font-bold text-4xl md:text-5xl text-white leading-tight mb-6">
               Southeast Nigeria&apos;s
               <br />
               <span className="text-gradient">Blockchain Movement</span>
             </h2>
-            <p className="text-white/60 font-['DM_Sans'] text-base leading-relaxed mb-5">
+            <p className="text-white/60 font-dm text-base leading-relaxed mb-5">
               The Anambra Web3 Community was born from a bold vision — to bring blockchain
               education, innovation, and opportunity to young people in Anambra State at a time
               when Web3 awareness in the region was almost nonexistent.
             </p>
-            <p className="text-white/50 font-['DM_Sans'] text-base leading-relaxed mb-8">
+            <p className="text-white/50 font-dm text-base leading-relaxed mb-8">
               Since 2023, we&apos;ve grown from a small group of enthusiasts to Southeast Nigeria&apos;s
               most impactful Web3 ecosystem — hosting massive conferences, running developer
               bootcamps, and connecting local talent to global opportunities.
             </p>
-            <Link href="/about" className="inline-flex items-center gap-2 text-primary font-['Syne'] font-bold hover:gap-4 transition-all duration-300 group">
+            <Link href="/about" className="inline-flex items-center gap-2 text-primary font-syne font-bold hover:gap-4 transition-all duration-300 group">
               Read our full story
               <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
             </Link>
@@ -51,8 +51,8 @@ export default function AboutSnippet() {
                 { year: "2026", label: "Conference 3.0 Coming" },
               ].map((t) => (
                 <div key={t.year} className="flex items-center gap-2 px-3 py-1.5 glass rounded-full">
-                  <span className="font-['Space_Mono'] text-primary text-xs font-bold">{t.year}</span>
-                  <span className="text-white/50 text-xs font-['DM_Sans']">{t.label}</span>
+                  <span className="font-mono text-primary text-xs font-bold">{t.year}</span>
+                  <span className="text-white/50 text-xs font-dm">{t.label}</span>
                 </div>
               ))}
             </div>
@@ -71,8 +71,8 @@ export default function AboutSnippet() {
                   <div className={`w-11 h-11 rounded-xl ${pillar.bg} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}>
                     <Icon size={22} className={pillar.color} />
                   </div>
-                  <h3 className="font-['Syne'] font-bold text-white text-sm mb-2">{pillar.title}</h3>
-                  <p className="text-white/45 font-['DM_Sans'] text-xs leading-relaxed">{pillar.description}</p>
+                  <h3 className="font-syne font-bold text-white text-sm mb-2">{pillar.title}</h3>
+                  <p className="text-white/45 font-dm text-xs leading-relaxed">{pillar.description}</p>
                 </div>
               );
             })}

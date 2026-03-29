@@ -72,36 +72,36 @@ export default function HeroSection() {
 
           {/* Main heading */}
           <div className="stagger-child mb-1">
-            <h1 className="font-['Syne'] font- font-bold text-[clamp(3rem,8vw,6rem)] leading-[1.0] text-white">
+            <h1 className="font-syne font-bold text-[clamp(3rem,8vw,6rem)] leading-[1.0] text-white">
               Building
             </h1>
           </div>
           <div className="stagger-child mb-1">
-            <h1 className="font-['Syne'] font-bold text-[clamp(3rem,8vw,6rem)] leading-[1.0] text-gradient">
+            <h1 className="font-syne font-bold text-[clamp(3rem,8vw,6rem)] leading-[1.0] text-gradient">
              
               Web3's
             </h1>
           </div>
           <div className="stagger-child mb-1">
-            <h1 className="font-['Syne'] font-bold text-[clamp(3rem,8vw,6rem)] leading-[1.0] text-white">
+            <h1 className="font-syne font-bold text-[clamp(3rem,8vw,6rem)] leading-[1.0] text-white">
             Future in
             </h1>
           </div>
           <div className="stagger-child mb-1">
-            <h1 className="font-['Syne'] font-bold text-[clamp(3rem,8vw,6rem)] leading-[1.0] text-primary">
+            <h1 className="font-syne font-bold text-[clamp(3rem,8vw,6rem)] leading-[1.0] text-primary">
               Anambra &
             </h1>
           </div>
 
           <div className="stagger-child mb-1">
-            <h1 className="font-['Syne'] font-bold text-[clamp(3rem,8vw,6rem)] leading-[1.0] text-primary">
+            <h1 className="font-syne font-bold text-[clamp(3rem,8vw,6rem)] leading-[1.0] text-primary">
               Beyond
             </h1>
           </div>
 
           {/* Typewriter */}
           <div className="stagger-child mb-6">
-            <p className="text-white/50 font-['DM_Sans'] text-xl">
+            <p className="text-white/50 font-dm text-xl">
               We train{" "}
               <span className="text-primary font-bold type-cursor">
                 {displayed}
@@ -111,7 +111,7 @@ export default function HeroSection() {
 
           {/* Sub */}
           <div className="stagger-child mb-10">
-            <p className="text-white/55 font-['DM_Sans'] text-lg leading-relaxed max-w-xl">
+            <p className="text-white/55 font-dm text-lg leading-relaxed max-w-xl">
               From Anambra to the world educating developers,creators, Designers, founders, hosting world-class conferences,
               and connecting Southeast Nigeria to the global Web3 ecosystem.
             </p>
@@ -136,8 +136,8 @@ export default function HeroSection() {
               { v: "400+", l: "Devs Trained" },
             ].map((s) => (
               <div key={s.l}>
-                <div className="font-['Syne'] font-bold text-3xl text-primary">{s.v}</div>
-                <div className="text-white/40 font-['DM_Sans'] text-sm">{s.l}</div>
+                <div className="font-syne font-bold text-3xl text-primary">{s.v}</div>
+                <div className="text-white/40 font-dm text-sm">{s.l}</div>
               </div>
             ))}
           </div>
@@ -178,7 +178,7 @@ function MagneticButton({ children, href, primary }: { children: React.ReactNode
       href={href}
       onMouseMove={onMouseMove}
       onMouseLeave={onMouseLeave}
-      className={`inline-flex items-center gap-2 px-7 py-4 rounded-2xl font-['Syne'] font-bold text-base transition-all duration-300 ${
+      className={`inline-flex items-center gap-2 px-7 py-4 rounded-2xl font-syne font-bold text-base transition-all duration-300 ${
         primary
           ? "bg-primary text-dark hover:bg-primary-light glow hover:glow-strong hover:scale-105"
           : "border border-primary/40 text-primary hover:bg-primary/10 hover:border-primary"

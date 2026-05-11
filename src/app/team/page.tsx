@@ -34,7 +34,7 @@ const teamMembers = [
     name: "Vziko",
     role: "Head of Operations",
     bio: "Keeps everything running smoothly behind the scenes. Vziko manages the systems, processes, and coordination that allow Anambra Web3 to operate at scale.",
-    avatar: "/vziko.jpg",
+    avatar: "/logomain.png",
     featured: false,
     twitter: "#", linkedin: "#", github: "#"
   },
@@ -42,7 +42,7 @@ const teamMembers = [
     name: "Lucy",
     role: "Media Lead",
     bio: "The voice and lens of Anambra Web3. Lucy leads all media coverage, content creation, and storytelling — making sure every event, milestone, and community moment is captured and shared with the world.",
-    avatar: "/lucy.jpg",
+    avatar: "/logomain.png",
     featured: false,
     twitter: "#", linkedin: "#", github: "#"
   },
@@ -50,7 +50,7 @@ const teamMembers = [
     name: "Destiny",
     role: "Head of Partnerships",
     bio: "Builds and maintains the relationships that power the community. Destiny connects Anambra Web3 with ecosystem partners, sponsors, and collaborators across Nigeria and beyond.",
-    avatar: "/destiny.jpg",
+    avatar: "/logomain.png",
     featured: false,
     twitter: "#", linkedin: "#", github: "#"
   },
@@ -58,7 +58,7 @@ const teamMembers = [
     name: "Sam",
     role: "Head of Partnerships",
     bio: "Works alongside Destiny to grow and deepen the community's partner network — bringing in the right organizations to support the mission of building Web3 in Southeast Nigeria.",
-    avatar: "/sam.jpg",
+    avatar: "/logomain.png",
     featured: false,
     twitter: "#", linkedin: "#", github: "#"
   },

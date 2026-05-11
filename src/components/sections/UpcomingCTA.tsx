@@ -3,7 +3,7 @@ import { ArrowRight, Mail } from "lucide-react";
 
 export default function UpcomingCTA() {
   return (
-    <section className="py-28 relative overflow-hidden">
+    <section className="py-16 sm:py-28 relative overflow-hidden defer-section">
       {/* Big background glow */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_50%_50%,rgba(158,148,255,0.14)_0%,transparent_65%)]" />
       <div className="absolute inset-0 dot-grid opacity-20" />

@@ -47,7 +47,7 @@ const programs = [
 
 export default function ProgramsSection() {
   return (
-    <section className="py-28 relative overflow-hidden">
+    <section className="py-16 sm:py-28 relative overflow-hidden defer-section">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_70%_50%,rgba(158,148,255,0.05)_0%,transparent_60%)]" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -71,7 +71,7 @@ export default function ProgramsSection() {
             return (
               <Link href={prog.href} key={prog.title}>
                 <div
-                  className="stagger-child glass shimmer rounded-2xl overflow-hidden group hover:border-primary/35 hover:-translate-y-1 transition-all duration-500 h-full cursor-none"
+                  className="stagger-child glass rounded-2xl overflow-hidden group hover:border-primary/35 hover:-translate-y-1 transition-all duration-300 h-full"
                   style={{ transitionDelay: `${i * 100}ms` }}
                 >
                   {/* Image header */}

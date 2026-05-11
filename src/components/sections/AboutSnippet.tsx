@@ -10,7 +10,7 @@ const pillars = [
 
 export default function AboutSnippet() {
   return (
-    <section className="py-28 relative overflow-hidden">
+    <section className="py-16 sm:py-28 relative overflow-hidden defer-section">
       {/* Background art */}
       <div className="absolute top-0 right-0 w-96 h-96 rounded-full bg-primary/5 blur-[100px] pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-64 h-64 rounded-full bg-primary/8 blur-[80px] pointer-events-none" />

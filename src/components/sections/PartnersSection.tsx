@@ -21,7 +21,7 @@ export default function PartnersSection() {
   const doubled = [...partners, ...partners];
 
   return (
-    <section className="py-20 relative overflow-hidden border-y border-primary/8">
+    <section className="py-16 sm:py-20 relative overflow-hidden border-y border-primary/8 defer-section">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_50%_50%,rgba(158,148,255,0.04)_0%,transparent_70%)]" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-10">
@@ -40,7 +40,7 @@ export default function PartnersSection() {
           {doubled.map((p: Partner, i) => (
             <div
               key={i}
-              className="inline-flex items-center gap-3 glass rounded-xl px-5 py-3 shrink-0 hover:border-primary/30 transition-all duration-300 hover:-translate-y-0.5 cursor-none"
+              className="inline-flex items-center gap-3 glass rounded-xl px-5 py-3 shrink-0 hover:border-primary/30 transition-all duration-300 hover:-translate-y-0.5"
             >
               {p.logo ? (
                 <div className="relative w-8 h-8 rounded-md overflow-hidden shrink-0 flex items-center justify-center bg-white/10">

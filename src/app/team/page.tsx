@@ -31,10 +31,10 @@ const teamMembers = [
     twitter: "#", linkedin: "#", github: "#"
   },
   {
-    name: "Vziko",
+    name: "Vaiko",
     role: "Head of Operations",
     bio: "Keeps everything running smoothly behind the scenes. Vziko manages the systems, processes, and coordination that allow Anambra Web3 to operate at scale.",
-    avatar: "/logomain.png",
+    avatar: "/vaiko.jpg",
     featured: false,
     twitter: "#", linkedin: "#", github: "#"
   },

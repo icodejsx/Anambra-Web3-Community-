@@ -1,7 +1,24 @@
 import { Metadata } from "next";
 import { Mail, Twitter, MessageCircle, MapPin, ArrowRight } from "lucide-react";
 
-export const metadata: Metadata = { title: "Contact | Anambra Web3 Community" };
+export const metadata: Metadata = {
+  title: "Contact Us — Join & Partner",
+  description:
+    "Contact Anambra Web3 Community in Awka, Anambra State. Reach us for partnerships, conference sponsorship, membership, or general inquiries at hello@anambraweb3.com.",
+  keywords: [
+    "contact Anambra Web3",
+    "Web3 partnership Nigeria",
+    "sponsor Anambra Web3 Conference",
+    "join Anambra Web3 community",
+  ],
+  alternates: { canonical: "/contact" },
+  openGraph: {
+    title: "Contact Anambra Web3 Community",
+    description:
+      "Partner with us, join the community, or ask about Conference 2026. Based in Awka, Anambra State, Nigeria.",
+    url: "/contact",
+  },
+};
 
 const contactOptions = [
   { icon: Mail, title: "General Inquiries", desc: "Questions about community, programs, or membership", value: "hello@anambraweb3.com", href: "mailto:hello@anambraweb3.com" },

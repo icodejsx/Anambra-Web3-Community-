@@ -106,31 +106,13 @@ export default function HeroSection() {
             </div>
           </div>
 
-          <div className="stagger-child mb-1">
-            <h1 className="font-syne font-bold text-[clamp(2.5rem,8vw,6rem)] leading-[1.0] text-white">
-              Building
-            </h1>
-          </div>
-          <div className="stagger-child mb-1">
-            <h1 className="font-syne font-bold text-[clamp(2.5rem,8vw,6rem)] leading-[1.0] text-gradient">
-              Web3&apos;s
-            </h1>
-          </div>
-          <div className="stagger-child mb-1">
-            <h1 className="font-syne font-bold text-[clamp(2.5rem,8vw,6rem)] leading-[1.0] text-white">
-              Future in
-            </h1>
-          </div>
-          <div className="stagger-child mb-1">
-            <h1 className="font-syne font-bold text-[clamp(2.5rem,8vw,6rem)] leading-[1.0] text-primary">
-              Anambra &
-            </h1>
-          </div>
-          <div className="stagger-child mb-1">
-            <h1 className="font-syne font-bold text-[clamp(2.5rem,8vw,6rem)] leading-[1.0] text-primary">
-              Beyond
-            </h1>
-          </div>
+          <h1 className="font-syne font-bold text-[clamp(2.5rem,8vw,6rem)] leading-[1.0] mb-1">
+            <span className="stagger-child block text-white">Building</span>
+            <span className="stagger-child block text-gradient">Web3&apos;s</span>
+            <span className="stagger-child block text-white">Future in</span>
+            <span className="stagger-child block text-primary">Anambra &amp;</span>
+            <span className="stagger-child block text-primary">Beyond</span>
+          </h1>
 
           <div className="stagger-child mb-6">
             <p className="text-white/50 font-dm text-lg sm:text-xl">

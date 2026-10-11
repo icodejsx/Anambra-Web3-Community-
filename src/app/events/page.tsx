@@ -3,7 +3,25 @@ import Image from "next/image";
 import { BookOpen, Code2, Zap, Mic, Calendar, Clock, Users, CheckCircle, ArrowRight } from "lucide-react";
 import Link from "next/link";
 
-export const metadata: Metadata = { title: "Events & Programs | Anambra Web3 Community" };
+export const metadata: Metadata = {
+  title: "Events & Training Programs",
+  description:
+    "Join Anambra Web3 programs: 21 Days Crypto for Newbies, Cairo Smart Contract Bootcamp, Web3 hackathons, and community meetups across Southeast Nigeria.",
+  keywords: [
+    "crypto for newbies Nigeria",
+    "Cairo bootcamp Anambra",
+    "Web3 hackathon Nigeria",
+    "blockchain training Awka",
+    "Starknet bootcamp Nigeria",
+  ],
+  alternates: { canonical: "/events" },
+  openGraph: {
+    title: "Events & Training Programs | Anambra Web3 Community",
+    description:
+      "Learn, build, and ship — beginner crypto programs, Cairo bootcamps, hackathons, and meetups in Anambra.",
+    url: "/events",
+  },
+};
 
 const programs = [
   {

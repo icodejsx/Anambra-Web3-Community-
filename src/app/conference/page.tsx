@@ -2,8 +2,27 @@ import { Metadata } from "next";
 import Image from "next/image";
 import { Calendar, MapPin, Users, Mic, Award, ArrowRight, CheckCircle } from "lucide-react";
 import Link from "next/link";
+import { ConferenceEventJsonLd } from "@/components/seo/JsonLd";
 
-export const metadata: Metadata = { title: "Conference | Anambra Web3 Community" };
+export const metadata: Metadata = {
+  title: "Anambra Web3 Conference 2024–2026",
+  description:
+    "Anambra Web3 Conference — Southeast Nigeria's largest blockchain event. Relive 2024 (1,700+), 2025 (5,000+), and register interest for Conference 3.0 in 2026 with 10,000+ expected attendees.",
+  keywords: [
+    "Anambra Web3 Conference",
+    "Web3 conference Nigeria",
+    "blockchain conference Awka",
+    "Anambra Web3 Conference 2026",
+    "Stanel Dome Web3",
+  ],
+  alternates: { canonical: "/conference" },
+  openGraph: {
+    title: "Anambra Web3 Conference | Southeast Nigeria's Flagship Web3 Event",
+    description:
+      "From 1,700 attendees in 2024 to 5,000+ in 2025 — join Conference 3.0 in 2026. Speakers, hackathons, and global Web3 partnerships in Anambra.",
+    url: "/conference",
+  },
+};
 
 const conf2024Photos = [
    "/AW3C-184 (1).jpg",
@@ -42,6 +61,7 @@ const conf2024Speakers = [
 export default function ConferencePage() {
   return (
     <div className="pt-20">
+      <ConferenceEventJsonLd />
       {/* Hero */}
       <section className="relative py-28 overflow-hidden">
         <div className="gradient-mesh" />

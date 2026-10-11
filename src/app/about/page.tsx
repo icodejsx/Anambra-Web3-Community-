@@ -5,8 +5,22 @@ import Link from "next/link";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "About | Anambra Web3 Community",
-  description: "Our story — from a small group to Southeast Nigeria's #1 blockchain ecosystem.",
+  title: "About Us — Our Story & Mission",
+  description:
+    "Learn how Anambra Web3 Community grew from a small Awka meetup in 2023 into Southeast Nigeria's leading blockchain ecosystem — conferences, bootcamps, and 6,000+ members.",
+  keywords: [
+    "Anambra Web3 story",
+    "blockchain community Anambra",
+    "Web3 Awka",
+    "Southeast Nigeria blockchain",
+  ],
+  alternates: { canonical: "/about" },
+  openGraph: {
+    title: "About Anambra Web3 Community",
+    description:
+      "From a small group of enthusiasts in 2023 to Southeast Nigeria's most impactful Web3 ecosystem.",
+    url: "/about",
+  },
 };
 
 const timeline = [

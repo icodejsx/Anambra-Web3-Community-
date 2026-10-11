@@ -3,7 +3,23 @@ import Image from "next/image";
 import { Twitter, Linkedin, Github, ArrowRight } from "lucide-react";
 import Link from "next/link";
 
-export const metadata: Metadata = { title: "Our Team | Anambra Web3 Community" };
+export const metadata: Metadata = {
+  title: "Our Team — Builders Behind the Community",
+  description:
+    "Meet the founders and core team building Anambra Web3 Community — Southeast Nigeria's leading blockchain education and conference organizers in Awka.",
+  keywords: [
+    "Anambra Web3 team",
+    "Ken Anambra Web3",
+    "Web3 community leaders Nigeria",
+  ],
+  alternates: { canonical: "/team" },
+  openGraph: {
+    title: "Our Team | Anambra Web3 Community",
+    description:
+      "The builders powering Southeast Nigeria's #1 Web3 community — education, conferences, and ecosystem growth.",
+    url: "/team",
+  },
+};
 
 const teamMembers = [
   {
